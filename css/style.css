@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Source+Sans+Pro:wght@600&display=swap');
+
+#botonera{
+	background-color: #352728;
+}
+#botonera img{
+	width: 150px;
+}
+#botonera ul li a {
+	color: #d3b895;
+}
+#botonera ul li a:hover {
+	color: #d3b895;
+	background-color: #385258 ;		
+	transition: background-color 1s;
+}
+.banner{
+	width: 100%;
+}
+
+/*--============== colores de contenedores ==============--*/
+.bg-brown{
+	background-color: #352728;
+	color: white;
+}
+.bg-li-brown{
+	background-color: #d3b895;
+}
+.cofeeBg{
+	background-image: url("../img/fondo1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 0.5;
+}
+/*--============== textos ==============--*/
+
+.textoComun {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #352728;
+	}
+
+.textoDestacado{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #352728;
+	font-weight: bold;
+	}
+
+.titulos{
+	font-family: 'Arima', cursive;
+	color: #4d7a81;
+	font-weight: bold;
+}
+.titulos2{
+	font-family: 'Arima', cursive;
+	font-weight: bold;
+	color: #352728;
+}
+
+
+/*--============== imagenes ==============--*/
+
+.chico{
+	width: 3%;
+}
+
+.efecto:hover{
+	transform: scale(1.1);
+}

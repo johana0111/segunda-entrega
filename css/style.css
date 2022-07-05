@@ -34,6 +34,12 @@
 	background-attachment: fixed;
 	opacity: 0.5;
 }
+.btnStyle:hover{
+	color: white;
+	background-color: #385258 ;		
+	transition: background-color 0,8s;
+}
+
 /*--============== textos ==============--*/
 
 .textoComun {
@@ -43,8 +49,7 @@
 
 .textoDestacado{
 	font-family: 'Source Sans Pro', sans-serif;
-	color: #352728;
-	font-weight: bold;
+	color: black;
 	}
 
 .titulos{
@@ -57,6 +62,13 @@
 	font-weight: bold;
 	color: #352728;
 }
+.textoAzul{
+color: #4d7a81;
+font-family: 'Source Sans Pro', sans-serif;
+text-shadow: unset;
+text-shadow: #CCC 1px 0 10px;
+}
+
 
 
 /*--============== imagenes ==============--*/
@@ -64,6 +76,24 @@
 .chico{
 	width: 3%;
 }
+
+.fondo{
+	background: url(../img/fondo1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	
+}
+/*--============== Queries ==============--*/
+
+@media (min-width: 576px){
+	.ancho{
+		width: 75%;
+	}
+}
+
+/*--============== transformaciones ==============--*/
 
 .efecto:hover{
 	transform: scale(1.1);

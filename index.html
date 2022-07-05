@@ -43,47 +43,83 @@
       </div>
     </nav>
     <!--ends nav-->
-    <header>
-      <div class="container mt-3 mb-5">
-        <div class="row">
-            <div class="col">
-              <img class="banner" src="img/banner.jpg" alt="banner que muestra una taza de Cafetería">
-              <h1 class="titulos text-center fs-2 mt-3">Cafés para soñar despiertos</h1>
+    <header> <!-- Comienza el banner -->
+      <section id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-      </div>
-    </header>
-    <main>
-  <section>
-    <div class="row mx-5 mb-5">
-          <div class="col-12">
-            <p class="fs-6 textoComun">No te pierdas de las promociones mas pedidas por nuestros clientes solo en el mes de Julio!</p>
-            <a href="views/promociones.html" class="btn bg-brown">+ promos</a>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner.jpg" class="d-block w-100" alt="imagen que muestra una taza de cafe">
           </div>
-  </section>
-     <section>
-        <div class="row d-flex justify-content-center">
-         <article class="col-sm-12 col-md-6 col-lg-3">
-          <img src="img/promo1.jpg" class="w-75 d-block mx-auto">
-          <h3 class="text-center fs-5 titulos">latte +  medialuna</h3> 
-          <p class="text-center textoComun ">$200</p>           
-         </article>
-         <article class="col-sm-12 col-md-6 col-lg-3">
-          <img src="img/promo2.jpg" class="w-75 d-block mx-auto">
-          <h3 class="text-center fs-5 titulos">Cafe Helado</h3> 
-          <p class="text-center textoComun">$250</p>          
-         </article>
-         <article class="col-sm-12 col-md-6 col-xl-3">
-          <img src="img/promo3.jpeg" class="w-75 d-block mx-auto">
-          <h3 class="text-center fs-5 titulos">Cafe + jugo + 2 medialuna</h3> 
-          <p class="text-center textoComun">$300</p>          
-         </article>
-       </div>
+          <div class="carousel-item">
+            <img src="img/banner2.png" class="d-block w-100" alt="imagen que muestra nuestro pastel de nuez">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.png" class="d-block w-100" alt="imagen que muestra nuestros jugos">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    </header> <!-- termina el banner -->
+    <main>
+      <section class="bg-li-brown container-fluid py-3 mb-3 "><!-- mas info -->
+          <div class="row mx-5 mb-5">
+                <div class="col-12">
+                  <p class="fs-6 textoAzul ">No te pierdas de las promociones mas pedidas por nuestros clientes solo en el mes de Julio!</p>
+                  <a href="views/promociones.html" class="btn bg-brown btnStyle ">+ promos</a>
+                </div>
+      </section>
+
+    <div class="row d-flex justify-content-around"> 
+
+     <section class="col-sm-12 col-lg-3"><!-- cards -->
+        <div class="card h-100" style="width: 18rem;">
+          <img src="img/promo1.jpg" class="card-img-top" alt="cafe + 2 medialunas">
+          <div class="card-body">
+            <h4 class="card-title titulos">1 café - 2 medialunas glaseadas</h4>
+            <p class="card-text textoComun">$250</p>
+            <a href="#" class="btn bg-brown btnStyle">Comprar</a>
+          </div>
+        </div>
+     </section>
+
+     <section class="col-sm-12 col-lg-3 "><!-- cards -->
+        <div class="card h-100" style="width: 18rem;">
+          <img src="img/promo2.jpg" class="card-img-top" alt="café helado">
+          <div class="card-body">
+            <h4 class="card-title titulos">1 postre de café con una bocha de helado</h4>
+            <p class="card-text textoComun">$180</p>
+            <a href="#" class="btn bg-brown btnStyle">Comprar</a>
+          </div>
+        </div>
+     </section>
+
+     <section class="col-sm-12 col-lg-3"><!-- cards -->
+        <div class="card h-100" style="width: 18rem;">
+          <img src="img/promo3.jpeg" class="card-img-top" alt="cafe + 2 medialunas + jugo">
+          <div class="card-body">
+            <h4 class="card-title titulos">1 café con 2 medialunas y jugo</h4>
+            <p class="card-text textoComun">$320</p>
+            <a href="#" class="btn bg-brown btnStyle">Comprar</a>
+          </div>
+        </div>
      </section>
    </div>
+   
     </main>
 
 
-   <footer class="bg-li-brown ">
+   <footer class="bg-li-brown "> <!-- Comienza el footer -->
 
 
     <section>
@@ -96,7 +132,7 @@
       </a>
     </section>
      
-   </footer>
+   </footer> <!-- termina el footer -->
 
 
 

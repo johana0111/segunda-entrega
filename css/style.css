@@ -74,7 +74,7 @@ text-shadow: #CCC 1px 0 10px;
 /*--============== imagenes ==============--*/
 
 .chico{
-	width: 3%;
+	width: 10%;
 }
 
 .fondo{
@@ -93,8 +93,23 @@ text-shadow: #CCC 1px 0 10px;
 	}
 }
 
-/*--============== transformaciones ==============--*/
+/*--============== transformaciones y animaciones==============--*/
 
 .efecto:hover{
 	transform: scale(1.1);
+}
+
+@keyframes borDeColores {
+0% {border: solid #E352EA;}
+25% {border: solid #5277EA;}
+50% {border: solid #52EADA;}
+75% {border: solid #EAEA52;}
+100% {border: solid #EA7952;}
+}
+
+.animacion{
+	animation-name: borDeColores;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
 }
